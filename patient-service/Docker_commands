@@ -1,0 +1,5 @@
+# Patient service (only needs REST port)
+docker run -p 4000:4000 patient-service:latest
+
+# Billing service (needs both REST and gRPC)
+docker run -p 4001:4001 -p 9001:9001 billing-service:latest
